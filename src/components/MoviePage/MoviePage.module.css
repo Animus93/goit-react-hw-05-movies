@@ -67,3 +67,10 @@ hr {
 button:hover {
     cursor: pointer;
 }
+
+@media(max-width:837px){
+.item {
+  display: flex;
+  flex-direction: column;
+}
+}
