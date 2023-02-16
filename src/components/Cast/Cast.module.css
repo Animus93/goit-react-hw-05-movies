@@ -1,0 +1,28 @@
+.container {
+    /* background-color: rgba(0, 0, 0, 0.233); */
+    max-width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-flow: dense;
+    padding: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    gap: 10px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.item img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+@media(max-width:870px) {
+    .container{
+        max-width: 95vw;
+    }
+}
